@@ -1,8 +1,8 @@
 // generativeAI.js
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import API_KEY from "./apikey.js";
 
-const YOUR_API_KEY = "AIzaSyDwvgkDHbMEx6wddqX4x9ZCRyFh7pOwlc0"; // Replace with your actual API key
-const genAI = new GoogleGenerativeAI(YOUR_API_KEY);
+const genAI = new GoogleGenerativeAI(API_KEY);
 
 export const fetchRecipeSuggestions = async (prompt) => {
   try {
